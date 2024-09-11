@@ -9,7 +9,7 @@ class InferlessPythonModel:
     def infer(self, inputs):
         prompts = inputs["prompt"]
         result = self.llm.generate(prompts, self.sampling_params)
-        result_output = [[[output.outputs[0].text,output.outputs[0].token_ids] for output in result]
+        result_output = [output.outputs[0].text for output in result]
 
         return {'generated_result': result_output[0]}
 
