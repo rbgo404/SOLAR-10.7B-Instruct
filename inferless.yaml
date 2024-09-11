@@ -42,3 +42,4 @@ optional:
   runtime_file_name: inferless-runtime-config.yaml
 model_url: https://github.com/rbgo404/SOLAR-10.7B-Instruct.git
 provider: GITHUB
+io_schema: true
